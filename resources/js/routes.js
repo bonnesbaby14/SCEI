@@ -10,5 +10,11 @@ export const routes=[
         name:"login",
         path:"/login",
         component:Login,
+    },
+    {
+        name:"dashboard",
+        path:"/dashboard",
+        component:Login
+
     }
 ];

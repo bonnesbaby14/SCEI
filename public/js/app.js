@@ -2067,6 +2067,16 @@ module.exports = {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 module.exports = {
   data: function data() {
     return {
@@ -2172,6 +2182,10 @@ var routes = [{
   name: "login",
   path: "/login",
   component: _components_Login_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+}, {
+  name: "dashboard",
+  path: "/dashboard",
+  component: _components_Login_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
 }];
 
 /***/ }),
@@ -2217,7 +2231,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n  height: 92%;\n  width: 100%;\n  flex: 1 0 auto;\n  background-color: #2D3C45;\n\n\n  align-items: center;\n}\n.content[data-v-f2b6376c]{\n  margin-top: 70px;\n  width: 85%;\n  height: 70%;\n  background-color: blue;\n  border-radius: 10px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.main[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  width: 100%;\n  flex: 1 0 auto;\n  background-color: #2d3c45;\n\n  align-items: center;\n}\n.content[data-v-f2b6376c] {\n  margin-top: 50px;\n  width: 80%;\n  height: 80%;\n  background: rgb(23, 41, 131);\n  background: linear-gradient(\n    90deg,\n    rgba(23, 41, 131, 0.969625350140056) 50%,\n    rgba(2, 33, 182, 1) 100%\n  );\n  border-radius: 10px;\n  outline: 5px solid rgb(35, 35, 212);\n  outline-offset: 10px;\n  display: flex;\n  flex-direction: row;\n}\n.contentLeft[data-v-f2b6376c] {\n  height: 100%;\n  width: 70%;\n  color: white;\n  text-align: center;\n  /* background-color: red; */\n  padding: 20px;\n  padding-top: 70px;\n  font-family: \"Jura\", sans-serif;\n  display: flex;\n  flex-direction: column;\n}\n.contentRight[data-v-f2b6376c] {\n  height: 100%;\n  width: 30%;\n  /* background-color: green; */\n}\n.contentLeft .text hr[data-v-f2b6376c] {\n  width: 70%;\n  color: white;\n  border-top: 3px solid rgb(255, 255, 255);\n  margin: auto;\n}\n.contentLeft .text h1[data-v-f2b6376c] {\n  font-size: 6rem;\n}\n.text[data-v-f2b6376c] {\n  height: 40%;\n}\n.imageHome[data-v-f2b6376c] {\n\n  height: 100%;\n  width: 100%;\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px;\n    -o-object-fit: none;\n       object-fit: none;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -20340,7 +20354,24 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "main" }, [
-      _c("div", { staticClass: "content" })
+      _c("div", { staticClass: "content" }, [
+        _c("div", { staticClass: "contentLeft" }, [
+          _c("div", { staticClass: "text" }, [
+            _c("h1", [_vm._v("SCEI")]),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _c("h3", [_vm._v("Sistema de control de egresos e ingresos")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "contentRight" }, [
+          _c("img", {
+            staticClass: "imageHome",
+            attrs: { src: "/images/home2.jpg" }
+          })
+        ])
+      ])
     ])
   }
 ]
